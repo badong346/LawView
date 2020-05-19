@@ -75,8 +75,8 @@ public class ProfileDAO {
 	// 전체를 불러오지 말고 일부만 불러오는 경우
 	public List<ProfileDTO> selectByPageNo(int cpage) throws Exception{
 
-		int start = cpage * Configuration.recordCountPerpage - (Configuration.naviCountPerPage-1);
-		int end = start + (Configuration.recordCountPerpage-1);
+		int start = cpage * Configuration.recordCountPerPage - (Configuration.naviCountPerPage-1);
+		int end = start + (Configuration.recordCountPerPage-1);
 
 		String sql = "select * from (select profile_board.*, row_number() over(order by seq desc) rnum from profile_board) where rnum between ? and ?";
 		List<ProfileDTO> list = new ArrayList<>();	

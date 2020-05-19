@@ -104,19 +104,7 @@ public class ProfileController extends HttpServlet {
 		
 			}else if(cmd.contentEquals("/toProfileList.profile")) {
 	
-//				int cpage = 1; // 바로 게시판으로 들어갈 경우
-//				try{
-//					cpage = Integer.parseInt(request.getParameter("cpage")); //현재 페이지 받아오기
-//				}catch(Exception e) {}
-//				System.out.println("현재 페이지 : " + cpage); //현재 페이지 확인 코드
-//				
-//				List<ProfileDTO> list = dao.selectByPageNo(cpage); // 전체 목록이 아닌 일부만 불러오기
-//				String navi = dao.getpageNavi(cpage);	// 에러? 
-//				
-//				request.setAttribute("list", list);
-//				request.setAttribute("navi", navi);
-//				RequestDispatcher rd = request.getRequestDispatcher("profileList.jsp");
-//				rd.forward(request, response);
+
 				
 				response.sendRedirect("profileList.jsp");
 
@@ -201,7 +189,29 @@ public class ProfileController extends HttpServlet {
 				int result = dao.updateBySeq(new ProfileDTO(seq,name,title,phone,specialty,office_name,office_phone,test,education,id,img));
 				response.sendRedirect("toProfile.profile?seq="+seq);
 				
+			}else if(cmd.contentEquals("/toReservation.profile")) {
+				//예약페이지 'reservation.jsp'로 해당 시퀀스의 profileDTO 넘기기 
+				int seq = Integer.parseInt(request.getParameter("seq"));
+				ProfileDTO pdto = dao.selectBySeq(seq);
+				request.setAttribute("profileDto", pdto);
+				RequestDispatcher rd = request.getRequestDispatcher("reservation.jsp");
+				rd.forward(request, response);
+				
+//				seq 변호사 프로필 게시판 글번호;
+//				name : 변호사 이름; 
+//				title : 프로필타이틀(홍보문구);
+//				phone : 변호사 번호;
+//				specialty : 전문분야 String (썸머노트 나 기타 폼 적용 필요?);
+//				office_name : 사무소이름;
+//				office_phone : 사무소번호;
+//				test : 출신시험;
+//				education : 교육사항 String (썸머노트 나 기타 폼 적용 필요?);
+//				id : 변호사 회원 아이디;
+//				img : 변호사 프로필에 업로드된 사진의 저장된 이름;
+				
 			}
+			
+			
 			
 		}catch(Exception e) {
 			
