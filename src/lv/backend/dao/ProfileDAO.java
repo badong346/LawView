@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.naming.Context;
@@ -31,14 +32,17 @@ public class ProfileDAO {
 			pstat.setString(1, dto.getName());
 			pstat.setString(2, dto.getTitle());
 			pstat.setString(3, dto.getPhone());
-			pstat.setString(4, dto.getSpecialty());
+			
+	
+			pstat.setString(4, Arrays.toString(dto.getSpecialty()));// 배열을 스트링으로
 			pstat.setString(5, dto.getOffice_name());
 			pstat.setString(6, dto.getOffice_phone());
 			pstat.setString(7, dto.getTest());
 			pstat.setString(8, dto.getEducation());
 			pstat.setString(9, dto.getId());
-			pstat.setString(10, dto.getImg());
 
+			pstat.setString(10, dto.getImg());
+	
 			int result = pstat.executeUpdate();
 			System.out.println("insertProfile 결과 : "+result);
 			con.commit();
@@ -58,7 +62,7 @@ public class ProfileDAO {
 				String name = rs.getString("name");
 				String title = rs.getString("title");
 				String phone = rs.getString("phone");
-				String specialty = rs.getString("specialty");
+				String[] specialty = rs.getString("specialty").replace("[", "").replace("]", "").split(", "); // 문자열을 배열로 ",공백"
 				String office_name = rs.getString("office_name");
 				String office_phone = rs.getString("office_phone");
 				String test = rs.getString("test");
@@ -93,7 +97,7 @@ public class ProfileDAO {
 					String name = rs.getString("name");
 					String title = rs.getString("title");
 					String phone = rs.getString("phone");
-					String specialty = rs.getString("specialty");
+					String[] specialty = rs.getString("specialty").replace("[", "").replace("]", "").split(", "); // 문자열을 배열로 ",공백"
 					String office_name = rs.getString("office_name");
 					String office_phone = rs.getString("office_phone");
 					String test = rs.getString("test");
@@ -178,7 +182,7 @@ public class ProfileDAO {
 					String name = rs.getString("name");
 					String title = rs.getString("title");
 					String phone = rs.getString("phone");
-					String specialty = rs.getString("specialty");
+					String[] specialty = rs.getString("specialty").replace("[", "").replace("]", "").split(", "); // 문자열을 배열로 ",공백"
 					String office_name = rs.getString("office_name");
 					String office_phone = rs.getString("office_phone");
 					String test = rs.getString("test");
@@ -205,40 +209,52 @@ public class ProfileDAO {
 		}
 	}
 
-	public int updateBySeq(ProfileDTO dto) throws Exception{
+	public int updateByDTO(ProfileDTO dto) throws Exception{
 
 
 		if(dto.getImg() !=null) {
+			System.out.println("수정할 이미지 업로드 있음");
 			String sql = "update profile_board set title=?, specialty=?, education=?, img=? where seq =?";
 			try(
 					Connection con = this.getConnection();
 					PreparedStatement pstat = con.prepareStatement(sql);
 					){
 				pstat.setString(1, dto.getTitle());
-				pstat.setString(2, dto.getSpecialty());
+				pstat.setString(2, Arrays.toString(dto.getSpecialty()));// 배열을 스트링 한개로
 				pstat.setString(3, dto.getEducation());
 				pstat.setString(4, dto.getImg());
 				pstat.setInt(5, dto.getSeq());
+
+				System.out.println("수정되는 getSpecialty : "+Arrays.toString(dto.getSpecialty()));
 				int result = pstat.executeUpdate();
 				con.commit();
 				return result;
 			}
 
 		}else { //이미지를 새로 업로드 하지 않은 경우 기존 이미지 유지
+			System.out.println("수정할 이미지 업로드 없음");
 			String sql = "update profile_board set title=?, specialty=?, education=? where seq =?";
 			try(
 					Connection con = this.getConnection();
 					PreparedStatement pstat = con.prepareStatement(sql);
 					){
 				pstat.setString(1, dto.getTitle());
-				pstat.setString(2, dto.getSpecialty());
+				pstat.setString(2, Arrays.toString(dto.getSpecialty()));
 				pstat.setString(3, dto.getEducation());
 				pstat.setInt(4, dto.getSeq());
+				
+
+				System.out.println("수정되는 Title : "+ dto.getTitle());
+				System.out.println("수정되는 Specialty : "+ Arrays.toString(dto.getSpecialty()));
+				System.out.println("수정되는 Education : "+ dto.getEducation());
+				System.out.println("선택되는 Seq : "+ dto.getSeq());
+				
+
 				int result = pstat.executeUpdate();
 				con.commit();
 				return result;
+			
 			}
-
 
 		}
 

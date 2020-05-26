@@ -34,15 +34,16 @@
 
 
             /* header 영역 설정 */
-            .q_menu_btn{text-align: left; padding-top: 10px;}
-            .quickBtn{border: 0px solid white; background-color: white; width: 50px; height: 50px;}
-            .quickLine{border-bottom: 3px solid black; padding: 3px;}
-            .logo{width: 200px; padding-top: 10px;}
+                .q_menu_btn{text-align: left; padding-top: 10px;}  /*퀵메뉴 버튼*/
+                .quickBtn{border: 0px solid white; background-color: white; width: 50px; height: 50px;}
+                .quickLine{border-bottom: 3px solid #f56a6a; padding: 3px;}
+                .logo{width: 200px; padding-top: 10px;}
 
-            .nav{height: 100%;}
-            .nav-item{line-height: 60px;}
-            .nav-link{font-size: 18px; font-weight: 600; color:#f56a6a;}
-            .nav-link:hover{color: lightsalmon;}
+                .navi{padding: 0px;}
+                .nav{height: 100%;}
+                .nav-item{line-height: 60px;}
+                .nav-link{font-size: 18px; font-weight: 600; color:#f56a6a;}
+                .nav-link:hover{color: #f9a5a5;}
 
 
             /* 검색조건 영역 */
@@ -108,50 +109,66 @@
 
 
             /* 여기부터 퀵메뉴 사이드바 설정 */
-            .quickmenu{
-                width: 230px; height: 100%;
-                background-color: #f5f5f5;
-                text-align: center;
-                position: fixed;
-                z-index: 10;
-                top: 0px; left: -230px;  /*퀵메뉴 위치*/
-                transition-duration: 0.5s;
-            }
-            .quick_title{  /*사이드바 Menu title 부분*/
-                color: black; 
-                font-size: 20px; 
-                font-weight: 600;
-                text-align: left;
-                padding-top: 70px;
-                padding-left: 30px;
-            }
-            .q_line{   /* Menu 밑에 빨간줄 */
-                border-bottom: 3px solid #f56a6a;
-                width: 60px;
-            }
-            .quick_menu{
-                padding-top: 10px;
-            }
-            .quick_menu>li{
-                position: relative;
-                width: 100%; height: 50px;
-                list-style-type: none;
-                padding-left: 30px;
-            }
-            .q_m_line{   /*사이드메뉴 나누는 회색줄*/
-                border: 0.5px solid lightgray; 
-                width: 150px;
-            }
-            .quick_menu>li>a{  /* 사이드바 메뉴 글씨 */
-                position: relative;
-                text-decoration: none;
-                color: dimgray;
-                display: block;
-                width: 100%; height: 100%;
-                line-height: 50px;
-                text-align: left;
-            }
-            #q_back:hover{cursor: pointer;}  /* 사이드바 닫는 화살표 */
+                .quickmenu{
+                    width: 230px; height: 100%;
+                    background-color: #f5f5f5;
+                    text-align: center;
+                    position: fixed;
+                    z-index: 10;
+                    top: 0px; left: -230px;  /*퀵메뉴 위치*/
+                    transition-duration: 0.5s;
+                }
+                .quick_title{  /*사이드바 Menu title 부분*/
+                    color: black; 
+                    font-size: 20px; 
+                    font-weight: 600;
+                    text-align: left;
+                    padding-top: 70px;
+                    padding-left: 30px;
+                }
+                .q_line{   /* Menu 밑에 빨간줄 */
+                    border-bottom: 3px solid #f56a6a;
+                    width: 60px;
+                }
+                .quick_menu{
+                    padding-top: 10px;
+                }
+                .quick_menu>li{
+                    position: relative;
+                    width: 100%; height: 50px;
+                    list-style-type: none;
+                    padding-left: 30px;
+                }
+                .q_m_line{   /*사이드메뉴 나누는 회색줄*/
+                    border: 0.5px solid lightgray; 
+                    width: 150px;
+                }
+                .q_b_line{  /*메뉴,로그인 나누는 굵은 회색줄*/
+                    border: 1px solid lightgray; 
+                    width: 200px;
+                    position: relative;
+                    left: 20px; top: 30px;
+                    display: none;
+                }
+                .quick_menu>li>a{  /* 사이드바 메뉴 글씨 */
+                    position: relative;
+                    text-decoration: none;
+                    color: dimgray;
+                    display: block;
+                    width: 100%; height: 100%;
+                    line-height: 50px;
+                    text-align: left;
+                }
+                .quick_menu>li>a:hover{color: darkgray;}
+                #q_back:hover{cursor: pointer;}  /* 사이드바 닫는 화살표 */
+                #q_back{
+                    margin-left: 170px; 
+                    margin-top: 10px;
+                    font-size: 30px; font-weight: 600; 
+                    width: 50px; height: 50px;
+                    position: fixed;
+                }
+                #back_arrow{width: 30px; height: 30px; z-index: 20;}  /*화살표 이미지설정*/
             #q_back{
                 margin-left: 170px; 
                 margin-top: 10px;
@@ -174,17 +191,34 @@
 
 
         <script>
-            $(function(){
-                $("#q_menu_btn").on("click", function(){
-                    $("#quickmenu").css("transform", "translate(100%, 0px)");
-                })
-                $("#q_back").on("click", function(){
-                    $(this).parent().css("transform", "translate(-100%, 0px)");
-                    $(this).parent().css("transition-duration", "1s");
-                })
+                $(function(){
+                    $("#q_menu_btn").on("click", function(){
+                        $("#quickmenu").css("transform", "translate(100%, 0px)");
+                    })
+                    $("#q_back").on("click", function(){
+                        $(this).parent().css("transform", "translate(-100%, 0px)");
+                        $(this).parent().css("transition-duration", "1s");
+                    })
 
-            })
-        </script>
+                    $(".drop_btn").on("click", function(){
+                        $(".list-group-flush").css("display", "block");
+                        $(".d1").css("display", "none");
+                        $(".d2").css("display", "block");
+                    })
+                    $(".list-group-flush").focusout(function(){
+                        $(".list-group-flush").css("display", "none");
+                        $(".d1").css("display", "block");
+                        $(".d2").css("display", "none");
+                    })
+                    $(".d2").on("click", function(){
+                        $(".list-group-flush").css("display", "none");
+                        $(".d1").css("display", "block");
+                        $(".d2").css("display", "none");
+                    })
+
+
+                })
+            </script>
     </head>
 
 
@@ -192,56 +226,83 @@
     <body>
 
         <!-- header 영역 (맨위에 메뉴바) -->
-        <div class="row header">
+            <div class="row header">
 
-            <!-- quick menu 버튼 -->
-            <div class="q_menu_btn col-2 col-sm-1 col-md-0 d-md-none d-block" id=q_menu_btn>
-                <!--                quickmenu 넣기-->
-                <button class=quickBtn>
-                    <div class=quickLine></div>
-                    <div class=quickLine></div>
-                    <div class=quickLine></div>
-                </button>
+                <!-- quick menu 버튼 -->
+                <div class="q_menu_btn col-2 col-sm-1 col-md-0 d-md-none d-block" id=q_menu_btn>
+                    <!--   quickmenu 넣기-->
+                    <button class=quickBtn>
+                        <div class=quickLine></div>
+                        <div class=quickLine></div>
+                        <div class=quickLine></div>
+                    </button>
 
-            </div>
-
-            <!-- quick menu -->           
-            <div class="quickmenu" id="quickmenu">
-                <div id=q_back><img src="back.png" id=back_arrow></div>
-
-                <div class=quick_title>
-                    Menu
-                    <div class=q_line></div>
                 </div>
-                <div class=quick_menu>
-                    <li><a href=#>법률검색</a><div class=q_m_line></div></li>
-                    <li><a href=#>의뢰하기</a><div class=q_m_line></div></li>
-                    <li><a href=#>변호사</a></li>
+
+                <!-- quick menu -->           
+                <div class="quickmenu" id="quickmenu">
+                    <div id=q_back><img src="resources/image/back.png" id=back_arrow></div>
+
+                    <div class=quick_title>
+                        Menu
+                        <div class=q_line></div>
+                    </div>
+                    <div class=quick_menu>
+                        <li><a href=search.jsp>법률검색</a><div class=q_m_line></div></li>
+                        <li><a href=board.req>의뢰하기</a><div class=q_m_line></div></li>
+                        <li><a href=toProfileList.profile>변호사</a><div class=q_m_line></div></li>
+                        <li><a href=faqlist.question>Q&A</a></li>
+                    </div>
+                    <div class=q_b_line></div>
+                    <div class=quick_title>
+                        Login
+                        <div class=q_line></div>
+                    </div>
+                    <div class=quick_menu>
+                    	<c:choose>
+                    		<c:when test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
+                    			<li><a href=login.jsp>로그인</a><div class=q_m_line></div></li>
+                    		</c:when>
+                    		<c:otherwise>
+                    			<li><a href="logout.login">로그아웃</a><div class=q_m_line></div></li>
+                    			<li><a href="go.mypage">마이페이지</a></li>
+                    		</c:otherwise>
+                    	</c:choose>                        
+                    </div>
                 </div>
-            </div>
 
-            <div class="logo col-2 col-md-3 col-lg-2">
-                <img src="lawview.jpg" class="logo">
-            </div>
+                <div class="logo col-2 col-md-3 col-lg-2">
+                    <a href=main.jsp><img src="resources/image/lawview.jpg" class="logo"></a>
+                </div>
 
-            <div class="navi col-9 col-lg-10 d-md-block d-none">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">법률 검색</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">의뢰하기</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">변호사</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="navi col-9 col-lg-10 d-md-block d-none">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=search.jsp>법률 검색</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=board.req>의뢰하기</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=toProfileList.profile>변호사</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faqlist.question">Q&A</a>
+                        </li>
+                        <li class="nav-item">
+	                        <c:choose>
+	                    		<c:when test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
+	                    			<a class="nav-link" href=login.jsp>Login</a>
+	                    		</c:when>
+	                    		<c:otherwise>
+	                    			<a class="nav-link" href=logout.login>Logout</a>
+	                    		</c:otherwise>
+	                    	</c:choose>
+                        </li>
+                    </ul>
+                </div>
 
-        </div>
+            </div>
 
 
 
@@ -356,23 +417,42 @@
         <!--       컨텐츠 영역 끝        -->
         <script>
         //id체크
-        	$(function(){
-                    $("#idDuplCheck").on("click",function(){
-                    	$.ajax({
-            				url : "lawyerIdDuplCheck.signUp",
-            				type : "post",
-            				data : {id : $('#id').val()}
-            			}).done(function(resp){
-            				console.log(resp);
-            				if(resp == 'use'){
-            					$("#idHelp").text("이미 사용하고 있는 아이디 입니다.");
-            					$("#id").val("");
-            				}else if(resp == 'nouse'){
-            					$("#idHelp2").text("사용 가능한 아이디 입니다.");
-            				}
-            			})
-                    })
-                })
+        $(function() {
+           $("#idDuplCheck").on("click", function() {
+              if ($("#id").val() != "") {
+                 $.ajax({
+                    url : "idDuplCheck.login",
+                    type : "post",
+                    data : {
+                       id : $('#id').val()
+                    }
+                 }).done(function(resp) {   
+                    
+                    var msgid = document.getElementById("id").value;
+                    var idregex = /^[a-zA-Z]\w{4,19}$/;
+                    var result = idregex.test(msgid);
+                    
+                    if (resp == 'use') {
+                       $("#idHelp").text("이미 사용하고 있는 아이디 입니다.");
+                       $("#id").val("");
+                    } else if (resp == 'nouse') {
+                       if(!result){
+                          $("#idHelp2").text("");
+                          $("#idHelp").text("영대소문자로 시작하는 5 ~ 20자 단어(숫자,언더바 포함)");
+                       }else{
+                          $("#idHelp").text("");
+                          $("#idHelp2").text("사용 가능한 아이디 입니다.");                        
+                       }
+                       
+                    }
+                 })
+              } else {
+                 $("#idHelp").text("아이디를 입력해주세요");
+              }
+           })
+        })
+
+
         </script>
         <script>
             //주소 스크립트
@@ -555,7 +635,7 @@
                     }
                     if($("#email").val() == ""){
                         result = false;
-                        $("#emailHelp").text("이름를 입력해주세요");
+                        $("#emailHelp").text("이메일을 입력해주세요");
                     }
                     if($("#phone").val() == ""){
                         result = false;

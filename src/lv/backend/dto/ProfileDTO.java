@@ -7,7 +7,7 @@ public class ProfileDTO {
 	private String name; 
 	private String title;
 	private String phone;
-	private String specialty;
+	private String[] specialty;
 	private String office_name;
 	private String office_phone;
 	private String test;
@@ -20,7 +20,7 @@ public class ProfileDTO {
 	}
 	
 	
-	public ProfileDTO(String name, String title, String phone, String specialty, String office_name,
+	public ProfileDTO(String name, String title, String phone, String[] specialty, String office_name,
 			String office_phone, String test, String education, String id, String img) {
 		super();
 		this.name = name;
@@ -36,7 +36,7 @@ public class ProfileDTO {
 	}
 
 
-	public ProfileDTO(int seq, String name, String title, String phone, String specialty, String office_name,
+	public ProfileDTO(int seq, String name, String title, String phone, String[] specialty, String office_name,
 			String office_phone, String test, String education, String id) {
 		super();
 		this.seq = seq;
@@ -51,7 +51,7 @@ public class ProfileDTO {
 		this.id = id;
 	}
 	
-	public ProfileDTO(String name, String title, String phone, String specialty, String office_name,
+	public ProfileDTO(String name, String title, String phone, String[] specialty, String office_name,
 			String office_phone, String test, String education, String id) {
 		super();
 		this.name = name;
@@ -65,7 +65,7 @@ public class ProfileDTO {
 		this.id = id;
 	}
 	
-	public ProfileDTO(int seq, String name, String title, String phone, String specialty, String office_name,
+	public ProfileDTO(int seq, String name, String title, String phone, String[] specialty, String office_name,
 			String office_phone, String test, String education, String id, String img) {
 		super();
 		this.seq = seq;
@@ -114,12 +114,18 @@ public class ProfileDTO {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getSpecialty() {
+
+	
+	public String[] getSpecialty() {
 		return specialty;
 	}
-	public void setSpecialty(String specialty) {
+
+
+	public void setSpecialty(String[] specialty) {
 		this.specialty = specialty;
 	}
+
+
 	public String getOffice_name() {
 		return office_name;
 	}

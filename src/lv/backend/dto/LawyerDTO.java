@@ -22,7 +22,7 @@ public class LawyerDTO {
 	private String gender;
 	private Timestamp birth;
 	private String sbirth;
-	
+
 	public LawyerDTO() {};
 	public LawyerDTO(String id, String pw, String name, String email, String phone, String office_name,
 			String office_phone, String office_zipcode, String office_addr1, String office_addr2, String test,
@@ -45,11 +45,11 @@ public class LawyerDTO {
 		this.birth = birth;
 		this.sbirth = new SimpleDateFormat("YYYY-MM-dd").format(birth);
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	public LawyerDTO(String id, String pw, String name, String email, String phone, String office_name,
 			String office_phone, String office_zipcode, String office_addr1, String office_addr2, String test,
 			String test_num, String approval, String gender) {
@@ -165,9 +165,9 @@ public class LawyerDTO {
 	public void setSbirth(String sbirth) {
 		this.sbirth = sbirth;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }

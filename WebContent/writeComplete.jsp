@@ -10,7 +10,7 @@
 </head>
 <body>
 	<script>
-		alert("Write Complete");
+		alert("의뢰글 작성 완료");
 		location.href = "board.req";
 	</script>
 </body>

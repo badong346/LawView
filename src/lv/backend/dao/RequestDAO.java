@@ -101,6 +101,28 @@ public class RequestDAO {
 			return list;
 		}
 	}
+	public List<RequestDTO> selectAllDesc() throws Exception{
+		String sql = "select * from request_board order by 1 desc";
+		try(
+				Connection con = this.getConnection();
+				PreparedStatement pstat = con.prepareStatement(sql);
+				ResultSet rs = pstat.executeQuery();
+				){
+			List<RequestDTO> list = new ArrayList<>();
+			while(rs.next()) {
+				int seq = rs.getInt(1);
+				String writer = rs.getString(2);
+				Timestamp write_date = rs.getTimestamp(3);
+				int view_count = rs.getInt(4);
+				String title = rs.getString(5);
+				String category = rs.getString(6);
+				String id = rs.getString(7);
+				String contents = rs.getString(8);
+				list.add(new RequestDTO(seq,writer,write_date,view_count,title,category,id,contents));
+			}
+			return list;
+		}
+	}
 	public List<RequestDTO> selectByPageNo(int cpage) throws Exception{
 		String sql = "select * from (select request_board.*, row_number() over(order by seq desc) as rnum from request_board) where rnum between ? and ?";
 		int start = cpage * Configuration.recordCountPerPage - (Configuration.recordCountPerPage-1);
@@ -196,7 +218,7 @@ public class RequestDAO {
 		int end = start + (Configuration.recordCountPerPage-1);
 		List<RequestDTO> list = new ArrayList<>();
 		try(Connection con = this.getConnection();
-			PreparedStatement pstat = con.prepareStatement(sql);){
+				PreparedStatement pstat = con.prepareStatement(sql);){
 			if(category.contentEquals("")&&keyword.contentEquals("")) { // category, keyword가 비어있는 경우
 				pstat.setInt(1, start);
 				pstat.setInt(2, end);

@@ -13,7 +13,7 @@ public class ClientDTO {
 	private String phone;
 	private Timestamp birth;
 	private String sbirth;
-	
+
 	public ClientDTO() {};
 	public ClientDTO(String id, String pw, String name, String email, String phone, Timestamp birth) {
 		super();
@@ -75,7 +75,7 @@ public class ClientDTO {
 	public void setSbirth(String sbirth) {
 		this.sbirth = sbirth;
 	}
-	
-	
-	
+
+
+
 }

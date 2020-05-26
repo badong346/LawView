@@ -235,8 +235,8 @@
 
 /* 여기서부터 담당 페이지 스타일 추가하시면 됩니다. */
 #p_board {
-	width: 600px;
-	height: 500px;
+	width: 720px;
+	height: 700px;
 	margin: auto;
 	border: 1px solid gray;
 	overflow-y: auto;
@@ -254,8 +254,8 @@
 	width: 100%;
 	text-align: center;
 	background-color: #f5f5f5;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom :10px;
+
 }
 
 .title {
@@ -264,6 +264,7 @@
 	height: 50%;
 	text-align: left;
 	line-height: 50px;
+	margin-left : 10px;
 }
 
 .name {
@@ -273,6 +274,7 @@
 	text-align: left;
 	line-height: 25px;
 	text-size: 25px;
+	margin-left : 10px;
 }
 
 .phone {
@@ -282,19 +284,21 @@
 	height: 25%;
 	text-align: left;
 	line-height: 25px;
+	margin-left : 10px;
 }
 
 .profileImg {
 	float: right;
-	width: 20%;
+	width: 100px;
 	height: 100%;
 }
 
 .thumbnail {
-	height: 100%;
+	
 	border-radius: 70%;
 	
 	position: relative;
+	right: 20px;
 	padding-top: 100%;
 	overflow: hidden;
 }
@@ -323,6 +327,7 @@ input[type=button], input[type=submit] {
 	height: 25px;
 	margin-top: 20px;
 }
+
 </style>
 
 <script>
@@ -364,16 +369,16 @@ input[type=button], input[type=submit] {
 
 									var profileImg = $("<div>");
 									profileImg.addClass("profileImg");
+									
+							<%-- 회원정보에 이미지가 null일 경우 기본 사진(lawyer.png) 출력 --%>
 									if(resp[i].img == null){
-										profileImg.append("<div class=thumbnail><div class=centered><img src='http://localhost${pageContext.request.contextPath}/upload/lawyer.png'></div></div>")
+										profileImg.append("<div class=thumbnail><div class=centered><a href='toProfile.profile?seq="+resp[i].seq+"'><img src='${pageContext.request.contextPath}/upload/default.webp'></a></div></div>")
 
 									}else{
-										profileImg.append("<div class=thumbnail><div class=centered><img src='http://localhost${pageContext.request.contextPath}/upload/"+resp[i].img+"''></div></div>")
+										profileImg.append("<div class=thumbnail><div class=centered><a href='toProfile.profile?seq="+resp[i].seq+"'><img src='${pageContext.request.contextPath}/upload/"+resp[i].img+"''></a></div></div>")
 
 									}
-
-
-
+					
 									line.append(name);
 									line.append(profileImg);
 									line.append(title);
@@ -392,7 +397,6 @@ input[type=button], input[type=submit] {
 					                    $(this).parent().css("transition-duration", "1s");
 					                })
 					                
-		
 					                
 					                $("#p_board").on("scroll", function() {
 			var board = document.getElementById("p_board");
@@ -433,10 +437,10 @@ input[type=button], input[type=submit] {
 							var profileImg = $("<div>");
 							profileImg.addClass("profileImg");
 							if(resp[i].img == null){
-								profileImg.append("<div class=thumbnail><div class=centered><img src='http://localhost${pageContext.request.contextPath}/upload/lawyer.png'></div></div>")
+								profileImg.append("<div class=thumbnail><div class=centered><a href='toProfile.profile?seq="+resp[i].seq+"'><img src='${pageContext.request.contextPath}/upload/default.webp'></a></div></div>")
 
 							}else{
-								profileImg.append("<div class=thumbnail><div class=centered><img src='http://localhost${pageContext.request.contextPath}/upload/"+resp[i].img+"''></div></div>")
+								profileImg.append("<div class=thumbnail><div class=centered><a href='toProfile.profile?seq="+resp[i].seq+"'><img src='${pageContext.request.contextPath}/upload/"+resp[i].img+"''></a></div></div>")
 
 							}
 
@@ -463,75 +467,84 @@ input[type=button], input[type=submit] {
 </head>
 <body>
 
+            <!-- header 영역 (맨위에 메뉴바) -->
+            <div class="row header">
 
-	<!-- header 영역 (맨위에 메뉴바) -->
-	<div class="row header">
+                <!-- quick menu 버튼 -->
+                <div class="q_menu_btn col-2 col-sm-1 col-md-0 d-md-none d-block" id=q_menu_btn>
+                    <!--   quickmenu 넣기-->
+                    <button class=quickBtn>
+                        <div class=quickLine></div>
+                        <div class=quickLine></div>
+                        <div class=quickLine></div>
+                    </button>
 
-		<!-- quick menu 버튼 -->
-		<div class="q_menu_btn col-2 col-sm-1 col-md-0 d-md-none d-block"
-			id=q_menu_btn>
-			<!--   quickmenu 넣기-->
-			<button class=quickBtn>
-				<div class=quickLine></div>
-				<div class=quickLine></div>
-				<div class=quickLine></div>
-			</button>
+                </div>
 
-		</div>
+                <!-- quick menu -->           
+                <div class="quickmenu" id="quickmenu">
+                    <div id=q_back><img src="resources/image/back.png" id=back_arrow></div>
 
-		<!-- quick menu -->
-		<div class="quickmenu" id="quickmenu">
-			<div id=q_back>
-				<img src="resources/image/back.png" id=back_arrow>
-			</div>
+                    <div class=quick_title>
+                        Menu
+                        <div class=q_line></div>
+                    </div>
+                    <div class=quick_menu>
+                        <li><a href=search.jsp>법률검색</a><div class=q_m_line></div></li>
+                        <li><a href=board.req>의뢰하기</a><div class=q_m_line></div></li>
+                        <li><a href=toProfileList.profile>변호사</a><div class=q_m_line></div></li>
+                        <li><a href=faqlist.question>Q&A</a></li>
+                    </div>
+                    <div class=q_b_line></div>
+                    <div class=quick_title>
+                        Login
+                        <div class=q_line></div>
+                    </div>
+                    <div class=quick_menu>
+                    	<c:choose>
+                    		<c:when test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
+                    			<li><a href=login.jsp>로그인</a><div class=q_m_line></div></li>
+                    		</c:when>
+                    		<c:otherwise>
+                    			<li><a href="logout.login">로그아웃</a><div class=q_m_line></div></li>
+                    			<li><a href="go.mypage">마이페이지</a></li>
+                    		</c:otherwise>
+                    	</c:choose>                        
+                    </div>
+                </div>
 
-			<div class=quick_title>
-				Menu
-				<div class=q_line></div>
-			</div>
-			<div class=quick_menu>
-				<li><a href=search.jsp>법률검색</a>
-					<div class=q_m_line></div></li>
-				<li><a href=request.jsp>의뢰하기</a>
-					<div class=q_m_line></div></li>
-				<li><a href=profileList.jsp>변호사</a></li>
-				<div class=q_m_line></div>
-				</li>
-				<li><a href=faqlist.question>Q&A</a></li>
-			</div>
-			<div class=q_b_line></div>
-			<div class=quick_title>
-				Login
-				<div class=q_line></div>
-			</div>
-			<div class=quick_menu>
-				<li><a href=login.jsp>로그인</a>
-					<div class=q_m_line></div></li>
-				<li><a href=mypage.jsp>마이페이지</a></li>
-			</div>
-		</div>
+                <div class="logo col-2 col-md-3 col-lg-2">
+                    <a href=main.jsp><img src="resources/image/lawview.jpg" class="logo"></a>
+                </div>
 
-		<div class="logo col-2 col-md-3 col-lg-2">
-			<a href=main.jsp><img src="resources/image/lawview.jpg"
-				class="logo"></a>
-		</div>
+                <div class="navi col-9 col-lg-10 d-md-block d-none">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=search.jsp>법률 검색</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=board.req>의뢰하기</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=toProfileList.profile>변호사</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faqlist.question">Q&A</a>
+                        </li>
+                        <li class="nav-item">
+	                        <c:choose>
+	                    		<c:when test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
+	                    			<a class="nav-link" href=login.jsp>Login</a>
+	                    		</c:when>
+	                    		<c:otherwise>
+	                    			<a class="nav-link" href=logout.login>Logout</a>
+	                    		</c:otherwise>
+	                    	</c:choose>
+                        </li>
+                    </ul>
+                </div>
 
-		<div class="navi col-9 col-lg-10 d-md-block d-none">
-			<ul class="nav justify-content-end">
-				<li class="nav-item"><a class="nav-link active" href=search.jsp>법률
-						검색</a></li>
-				<li class="nav-item"><a class="nav-link" href=request.jsp>의뢰하기</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" href=profileList.jsp>변호사</a>
-				</li>
-				<li class="nav-item"><a class="nav-link"
-					href="faqlist.question">Q&A</a></li>
-				<li class="nav-item"><a class="nav-link" href=login.jsp>Login</a>
-				</li>
-			</ul>
-		</div>
-
-	</div>
+            </div>
 
 
 	<!--      전체 컨테이너 (헤더,푸터 제외)    -->
@@ -543,10 +556,13 @@ input[type=button], input[type=submit] {
 
 			<div id="p_board"></div>
 
-
+			<c:choose>
+				<c:when test="${not empty sessionScope.lawyerInfo}">
 			<div class="col-12" align=right>
 				<input type=button id=writeProfile value="프로필 작성">
 			</div>
+			</c:when>
+			</c:choose>
 
 
 		</div>

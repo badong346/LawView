@@ -59,14 +59,15 @@
 							</div>
 							<!-- 의뢰자로그인-->
 
-							<form id="login" action="login.login" method="get"
+							<form id="login" action="clientlogin.login" method="post"
 								class="input-group">
 								<input type="text" class="input-field" placeholder="User ID"
 									name="id" required> <input type="password"
 									class="input-field" placeholder="Enter Password" name="pw"
 									required> <input type="checkbox" class="checkbox">
 								<span>아이디기억하기</span>
-								<button class="submit" style="color: white" type="submit">로그인</button>
+								<button class="submit" name='login' value='clogin'
+									style="color: white" type="submit">로그인</button>
 								<br>
 								<button class="submit" type="button" id="signUp"
 									style="color: white">회원가입</button>
@@ -79,13 +80,14 @@
 
 							</form>
 							<!-- 변호사 로그인-->
-							<form id="register" action="lawlogin.login" method="get"
+							<form id="register" action="lawyerlogin.login" method="get"
 								class="input-group">
 								<input type="text" class="input-field" placeholder="User ID"
 									name="law_id" required> <input type="password"
 									class="input-field" placeholder="Enter Password" name="law_pw"
 									required> <input type="checkbox" class="checkbox"><span>아이디기억하기</span>
-								<button class="submit" style="color: white" type="submit">로그인</button>
+								<button class="submit" name='login' value='llogin'
+									style="color: white" type="submit">로그인</button>
 								<br>
 
 								<button class="submit" type="button" id="lawsignUp"
@@ -112,9 +114,9 @@
 			console.log('Full Name: ' + profile.getName());
 			console.log("Image URL: " + profile.getImageUrl());
 			console.log("Email: " + profile.getEmail());
-			location.href = "signUp.login";
 
-			
+			//test주소
+			//location.href = "signUp.login";
 
 		}
 	</script>
@@ -125,7 +127,6 @@
 		var state = naver_id_login.getUniqState();
 		naver_id_login.setButton("white", 3, 40);
 		//로그인완료 되는 페이지로 이동  //law_login > 에서 완성페이지
-		
 
 		naver_id_login.setState(state);
 		naver_id_login.setPopup();

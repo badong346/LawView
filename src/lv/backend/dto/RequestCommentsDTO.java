@@ -62,7 +62,7 @@ public class RequestCommentsDTO {
 		long write_date = this.write_date.getTime(); // 글 작성 시점
 		long current_date = System.currentTimeMillis(); // 현재 시점
 		long gapTime = (current_date - write_date)/1000; // ms 로 0.001 초까지 나오기 때문에 1000으로 나눠야 함
-		
+
 		if(gapTime < 60) {
 			return "방금 전";
 		}else if(gapTime < 300) {
@@ -79,5 +79,5 @@ public class RequestCommentsDTO {
 		this.sdate = sdate;
 	}
 
-	
+
 }

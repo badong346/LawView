@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>의뢰 내용</title>
+<title>Insert title here</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -15,34 +15,23 @@
 	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 	crossorigin="anonymous"></script>
-<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-	crossorigin="anonymous"></script>
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<script src="https://kit.fontawesome.com/a207991562.js"
-	crossorigin="anonymous"></script>
+
 <style>
 * {
 	box-sizing: border-box;
 	text-align: center;
 }
-/* 추가 : 폰트 설정 */
-@font-face {
-	font-family: "barunGothic";
-	src: url("NanumBarunGothic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+
+/* 전체 틀 설정 (header, contents, footer영역) */
+.container {
+	width: 100%;
+	margin: auto;
 }
 
-* {
-	font-family: "barunGothic";
-	font-size: 14px;
-}
-/* 전체 틀3개 설정 (header, contents, footer영역) */
 .header { /*맨위 고정메뉴*/
 	position: fixed;
 	width: 100%;
@@ -144,7 +133,7 @@
 	color: black;
 }
 
-/* 퀵메뉴 사이드바 설정 */
+/* 여기부터 퀵메뉴 사이드바 설정 */
 .quickmenu {
 	width: 230px;
 	height: 100%;
@@ -232,90 +221,88 @@
 } /*화살표 이미지설정*/
 
 /* contents영역 설정들 */
-.container {
-	background-color: white;
+.contents>div {
+	padding-top: 30px;
 }
 
-body {
-	background-color: #fafafa;
+.lineT {
+	border-top: 2px solid lightgray;
+	padding-bottom: 5px;
 }
 
-.footer {
-	background-color: white;
+.lineB {
+	border-bottom: 2px solid lightgray;
+	padding-bottom: 15px;
 }
 
-.board-info {
-	height: 60px;
-	line-height: 60px;
-	background-color: #fad2d2;
+.question {
+	padding: 0;
+	border-bottom: 1px solid lightgray;
 }
 
-.page-link {
-	color: #f56a6a;
-} /* 색상 설정 */
-.btn {
-	background-color: #f56a6a;
-	height: 40px;
-}
-
-.table-wrapper>.row>div {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-#box1 {
-	width: 100%;
-	height: 200px;
-	border: 2px solid #f56a6a;
+.seq {
 	float: left;
-	overflow-y: auto;
+	width: 10%;
+	font-size: 20px;
+	font-weight: 600;
+	color: #f56a6a;
+	line-height: 50px;
 }
 
-#writeCmt>.row {
-	background-color: white;
+.title {
+	float: left;
+	width: 90%;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 13px;
 }
 
-.contents div {
-	padding-top: 10px;
+.title:hover {
+	cursor: pointer;
 }
 
-.comments {
-	padding: 10px;
-	background-color: #e8e8e8;
-} /*변호사 comments 영역*/
-.comments_contents {
-	border-bottom: 1px solid #dddddd;
+.answer {
+	padding: 0;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid lightgray;
+	display: none;
 }
 
-.comments_contents>.row>div {
-	background-color: #fafafa;
+.an_seq {
+	float: left;
+	width: 10%;
+	font-size: 20px;
+	font-weight: 600;
+	color: #f56a6a;
+	line-height: 50px;
 }
 
-.comments_contents>div {
-	padding-top: 10px;
+.an_contents {
+	float: left;
+	width: 90%;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 15px;
+	overflow-x: hidden;
 }
 
-.all>div {
-	padding-top: 10px;
+/* type 설정 */
+.type {
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: #fde7e7;
+	color: #f56a6a;
 }
 
-#req_category {
-	font-size: 8pt;
+.type1 {
+	background-color: #f56a6a;
+	color: white;
 }
 
-#req_title>a {
-	font-size: 16pt;
-	text-decoration: none;
-	color: black;
-}
-
-#req_contents {
-	font-size: 12pt;
-	padding: 30px;
-}
-
-#req_date {
-	font-size: 10pt;
+.type:hover {
+	cursor: pointer;
 }
 </style>
 
@@ -329,34 +316,89 @@ body {
                     $(this).parent().css("transform", "translate(-100%, 0px)");
                     $(this).parent().css("transition-duration", "1s");
                 })
-                $("#back").on("click",function(){
-                	location.href = "board.req";
+                
+                
+                //FAQ 종류 탭 클릭했을때
+                $(".type").on("click",function(){
+                    var selectedIndex = $(this).index();
+                    var selectedId = $(this).attr('id');
+                    
+                    $(".type").each(function(index, item){  
+                        if(index == selectedIndex){
+                            $(item).css('background-color','#f56a6a');
+                            $(item).css('color','white');
+                            
+                        }else{
+                            $(item).css('background-color','#fde7e7');
+                            $(item).css('color','#f56a6a');
+                        }
+                    })
+                    console.log(selectedId);
+                    
+                    $.ajax({
+                               url:"ajax.question",
+                               type:"post",
+                               data:{table:selectedId},  //DB테이블 '이름' 보냄 (faq1, faq2..)
+                               dataType:"json"
+                               
+                            }).done(function(response){
+                               $(".faqlist").html("");
+                               $(".faqlist").append("<div class=\"col-12 lineT\"></div>");
+                               
+                               for(var i=0; i<response.length; i++){
+                                  
+                                  var question = $("<div class=\"col-12 question\">");
+                                  
+                               var qe_seq = $("<div>");
+                               qe_seq.addClass("seq");
+                               qe_seq.append("Q"+response[i].seq);
+                               
+                               var title = $("<div>");
+                               title.addClass("title");
+                               title.append(response[i].title);
+                               
+                               question.append(qe_seq);
+                               question.append(title);
+                               
+                               var answer = $("<div class=\"col-12 answer\">");
+                               var an_seq = $("<div>");
+                               an_seq.addClass("an_seq");
+                               an_seq.append("A");
+                               
+                               var an_contents = $("<div>");
+                               an_contents.addClass("an_contents");
+                               an_contents.append(response[i].answer);
+                               
+                               answer.append(an_seq);
+                               answer.append(an_contents);
+                               
+                               $(".faqlist").append(question);  //.faqlist에 추가 (question과 answer를!)
+                               $(".faqlist").append(answer);
+                            }
+                               $(".faqlist").append("<div class=\"col-12 lineB\"></div>");
+                            })
                 })
-                $("#delete").on("click",function(){
-                	var result = confirm("정말 삭제하시겠습니까?");
-                	if(result){
-	                	location.href = "mydelete.req?seq="+${dto.seq};                		
-                	}
+                
+                
+                //동적 바인딩으로 이벤트 주기!!!
+                $(document).on("click",".question>.title",function(){
+                   var selectedIndex = ($(this).parent().index() - 1 )/2;
+                    $(".answer").each(function(index, item){
+                        if(index == selectedIndex){
+                            $(item).css('display','block');
+                        }else{
+                            $(item).css('display','none');
+                        }
+                    })
                 })
-                $("#writeCmt").on("submit",function(){
-                	var contents = $("#box1").text();
-                	var result = false;
-                	if($("#clientId").text() != ""){
-                		alert("변호사만 답변을 등록할 수 있습니다.");
-                	}else if($("#lawyerId").text() != ""){
-                		$("#sendcmt").val(contents);
-                		result = true;
-                	}else if(contents==""){
-                		alert("댓글 내용을 입력해주세요.");
-                	}
-                	return result;
-                })
+                
+
             })
         </script>
+
 </head>
 <body>
-	<div id="clientId" style="display: none;">${sessionScope.clientInfo}</div>
-	<div id="lawyerId" style="display: none;">${sessionScope.lawyerInfo}</div>
+
 	<!-- header 영역 (맨위에 메뉴바) -->
 	<div class="row header">
 
@@ -398,19 +440,15 @@ body {
 			</div>
 			<div class=quick_menu>
 				<c:choose>
-					<c:when test="${not empty sessionScope.clientInfo}">
-						<li><a href="logout.login">로그아웃</a>
-						<div class=q_m_line></div></li>
-						<li><a href=mypage.jsp>마이페이지</a></li>
-					</c:when>
-					<c:when test="${not empty sessionScope.lawyerInfo}">
-						<li><a href="logout.login">로그아웃</a>
-						<div class=q_m_line></div></li>
-						<li><a href=mypage.jsp>마이페이지</a></li>
-					</c:when>
-					<c:otherwise>
+					<c:when
+						test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
 						<li><a href=login.jsp>로그인</a>
 						<div class=q_m_line></div></li>
+					</c:when>
+					<c:otherwise>
+						<li><a href="logout.login">로그아웃</a>
+						<div class=q_m_line></div></li>
+						<li><a href="go.mypage">마이페이지</a></li>
 					</c:otherwise>
 				</c:choose>
 			</div>
@@ -432,80 +470,68 @@ body {
 				<li class="nav-item"><a class="nav-link"
 					href="faqlist.question">Q&A</a></li>
 				<li class="nav-item"><c:choose>
-						<c:when test="${not empty sessionScope.clientInfo}">
-							<a class="nav-link" href=logout.login>Logout</a>
-						</c:when>
-						<c:when test="${not empty sessionScope.lawyerInfo}">
-							<a class="nav-link" href=logout.login>Logout</a>
+						<c:when
+							test="${empty sessionScope.clientInfo && empty sessionScope.lawyerInfo}">
+							<a class="nav-link" href=login.jsp>Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="nav-link" href=login.jsp>Login</a>
+							<a class="nav-link" href=logout.login>Logout</a>
 						</c:otherwise>
 					</c:choose></li>
 			</ul>
 		</div>
 
 	</div>
+
+
+	<!--      전체 컨테이너 (헤더,푸터 제외)    -->
 	<div class="container">
-		<!-- contents 영역 (여기에 각자 컨텐츠들 넣으시면 되요) -->
+
+		<!-- contents 영역 -->
 		<div class=contents>
-			<div class="row all">
-				<div class="col-12 text-left" id="req_category">${dto.category}</div>
-				<div class="col-12 text-left" id="req_title">
-					<a href="#" class="logo">${dto.title}</a>
-				</div>
-				<div class="col-12 text-left" id="req_contents">
-					${dto.contents}</div>
-				<div class="col-12 text-left" id="req_date">${dto.sdate} 작성됨</div>
-				<div class="col-12 text-right">
-					<button type=button class="btn btn-danger" id=back>
-						<i class="fas fa-arrow-left"></i>
-					</button>
-					<c:choose>
-						<c:when test="${sessionScope.clientInfo == dto.id}">
-							<button type="button" class="btn btn-danger" id="delete">
-								<i class="fas fa-trash-alt"></i> 글 삭제
-							</button>
-						</c:when>
-					</c:choose>
-				</div>
-				<div class="col-12 text-left board-info">조회수 ${dto.view_count}</div>
+			<h2 class="text-left">FAQ 게시판</h2>
+			<h3 class="text-left">궁금한 질문들을 찾아보세요.</h3>
+
+			<!-- faq 종류 탭 -->
+			<div class="row type_container">
+				<div class="type col-4 type1" id=faq1>검색 게시판</div>
+				<div class="type col-4" id=faq2>의뢰 게시판</div>
+				<div class="type col-4" id=faq3>로그인</div>
 			</div>
-			<div class="row comments">
-				<div class="col-12 text-left">변호사 답변 ${list.size()}개</div>
-			</div>
-			<c:choose>
-				<c:when test="${empty list}">
-					<div class="row">
-						<div class="col-12">답변 없음</div>
-					</div>
-				</c:when>
-				<c:otherwise>
-					<c:forEach var="cmt" items="${list}">
-						<div class="row comments_contents">
-							<div class="col-12 text-left">
-								${cmt.writer} 변호사<br> 법무법인 태일<br> 050-1234-1234
+
+
+			<!-- 자주 묻는 질문 목록 -->
+			<div class="row faqlist">
+				<div class="col-12 lineT"></div>
+				<c:choose>
+					<c:when test="${empty result }">
+                                글이 없습니다.<br>
+					</c:when>
+					<c:otherwise>
+						<c:forEach var="i" items="${result }">
+
+							<div class="col-12 question">
+								<div class=seq>Q${i.seq}</div>
+								<div class=title>${i.title }</div>
 							</div>
-							<div class="col-12 text-left">${cmt.contents}</div>
-							<div class="col-12 text-right">${cmt.sdate} 작성됨</div>
-						</div>
-					</c:forEach>
-				</c:otherwise>
-			</c:choose>
-			<!-- 변호사 답변 -->
-			<form action="write.cmt?seq=${dto.seq}" method="post" id="writeCmt">
-				<div class="row">
-					<div class="col-12">
-						<div contenteditable="true" id="box1"></div>
-						<textarea id="sendcmt" style="display: none;" name=contents></textarea>
-					</div>
-					<div class="col-12">
-						<button type="submit" class="btn btn-danger">답변 등록</button>
-					</div>
-				</div>
-			</form>
+							<div class="col-12 answer">
+								<div class=an_seq>A</div>
+								<div class=an_contents>${i.answer }</div>
+							</div>
+
+						</c:forEach>
+					</c:otherwise>
+				</c:choose>
+				<div class="col-12 lineB"></div>
+			</div>
+
+
 		</div>
+		<!--contents 끝-->
 	</div>
+	<!--container 끝-->
+
+
 	<!--     footer 영역      -->
 	<div class="row footer">
 		<div class="col-12 sponser" style="padding: 0"></div>
@@ -531,5 +557,7 @@ body {
 			중구 남대문로 120 대일빌딩 2F, 3F<br> 연락처 : 02-722-0858 개인정보관리책임자 : 김영재
 		</div>
 	</div>
+
+
 </body>
 </html>

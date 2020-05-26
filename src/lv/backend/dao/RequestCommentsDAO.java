@@ -22,7 +22,7 @@ public class RequestCommentsDAO {
 	public int insert(int parent_seq, String writer, String id, String contents) throws Exception{
 		String sql = "insert into request_comments values(comments_seq.nextval,?,?,default,?,?)";
 		try(Connection con = this.getConnection();
-			PreparedStatement pstat = con.prepareStatement(sql);){
+				PreparedStatement pstat = con.prepareStatement(sql);){
 			pstat.setInt(1, parent_seq);
 			pstat.setString(2, writer);
 			pstat.setString(3, id);
@@ -35,7 +35,7 @@ public class RequestCommentsDAO {
 	public List<RequestCommentsDTO> selectByPseq(int pseq) throws Exception {
 		String sql = "select * from request_comments where parent_seq=?";
 		try(Connection con = this.getConnection();
-			PreparedStatement pstat = con.prepareStatement(sql);){
+				PreparedStatement pstat = con.prepareStatement(sql);){
 			pstat.setInt(1, pseq);
 			try(ResultSet rs = pstat.executeQuery();){
 				List<RequestCommentsDTO> list = new ArrayList<>();
@@ -55,7 +55,7 @@ public class RequestCommentsDAO {
 	public int countCmt(int pseq) throws Exception{
 		String sql = "select count(*) from request_comments where parent_seq=?";
 		try(Connection con = this.getConnection();
-			PreparedStatement pstat = con.prepareStatement(sql);){
+				PreparedStatement pstat = con.prepareStatement(sql);){
 			pstat.setInt(1, pseq);
 			try(ResultSet rs = pstat.executeQuery();){
 				rs.next();
