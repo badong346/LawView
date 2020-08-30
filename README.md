@@ -7,7 +7,7 @@
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
-## 업무내용
+## 담당 업무내용
 
 변호사 회원의 권한 관련 기능, 프로필 페이지
 
@@ -175,6 +175,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTMxMDUwOSwxNDE0MjY5MjI3LDE0Mz
-U4NDIyNDldfQ==
+eyJoaXN0b3J5IjpbMzYwODA3MTIyLDE0MTQyNjkyMjcsMTQzNT
+g0MjI0OV19
 -->
