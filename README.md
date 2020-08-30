@@ -20,7 +20,7 @@ StackEdit stores your files in your browser, which means all your files are auto
 ## 개발환경
 
 
-- H/W : Intel호환기중
+-  H/W : Intel호환기중
 
 -  언어 : Java
 
@@ -163,5 +163,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
+eyJoaXN0b3J5IjpbMTY1ODIwNjY1MSwxNDE0MjY5MjI3LDE0Mz
+U4NDIyNDldfQ==
 -->
