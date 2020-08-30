@@ -65,11 +65,11 @@
 
 - 예약하기 기능과 연동
 - 
-## Open a file
+# 화면 소개
 
 You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
 
-## Save a file
+## 변호사 프로필 리스트
 
 You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
 
@@ -168,6 +168,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxNTgyMjU0LDE0MTQyNjkyMjcsMTQzNT
-g0MjI0OV19
+eyJoaXN0b3J5IjpbLTg4NDM3NDA2MiwxNDE0MjY5MjI3LDE0Mz
+U4NDIyNDldfQ==
 -->
