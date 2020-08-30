@@ -113,14 +113,29 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 • 세션 정보를 확인하여 작성한 변호사 회원일 경우만 프로필 삭제, 프로필 수정, 상담시간 설정 기능을 사용하도록 설정
 
-## 프로필 작성 페이지 (반응형)
+## 프로필 작성 페이지
+> 변호사 회원만 접근이 가능한 프로필 작성 페이지
 
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+![image](https://user-images.githubusercontent.com/61821190/91650357-8f2a8800-eab9-11ea-831e-375dad17d47f.png)
+![image](https://user-images.githubusercontent.com/61821190/91650359-918ce200-eab9-11ea-9578-cd06e4967dc1.png)
 
 
-# Publication
+**구현기능설명**
 
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
+• 프로필 리스트 페이지에서 변호사 회원인 경우 이용할 수 있는 프로필 작성 페이지
+
+• 홍보를 위한 프로필 제목과 전문 분야 체크, 교육 사항과 프로필 사진 등을 업로드 수정 할 수 있는 페이지
+
+• 교육 사항의 경우 summernote 기능을 활용하여 추가로 이미지를 넣거나 글 스타일을 정할 수 있다.
+
+• 프로필 사진의 경우 업로드 하면 리스트페이지와 상세프로필 페이지에 크기가 수정되어 출력된다.
+
+• 수정하기 기능으로 들어온 경우 기존에 작성한 전문분야와 내용들이 출력되어 바로 갱신 할 수 있도록 구축 하였다.
+
+
+# 참여소감
+
+대학교 졸업 후 처음 하는 팀 프로젝트 이고, 프로젝트 기간에 비해 팀원들이 각자 추가하고자 하는 기능들이 많아 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에 원하는 사항들을 모두 만들 수 있었습니다. 시행착오도 물론 있었지만 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 효율적으로 진행 할 수 있겠다는 자신감이 생겼습니다.
 
 > Before starting to publish, you must link an account in the **Publish** sub-menu.
 
@@ -200,6 +215,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDU1NjY3MzMsLTI5MTE1NzUzNiwxMT
-Y1MzY5MDk0LDE0MTQyNjkyMjcsMTQzNTg0MjI0OV19
+eyJoaXN0b3J5IjpbMTI5Mjk5MDMzOSwtMjkxMTU3NTM2LDExNj
+UzNjkwOTQsMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
 -->
