@@ -1,21 +1,32 @@
 # 법률검색 및 변호사 상담사이트
 
-기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령정보는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률검색 기능과 상담 기능을 제공하는 사이트를 만들고자 함.
+기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령 정보는 일반인에게는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률 검색 기능과 상담 기능**을 제공하는 사이트를 만들고자 함.
 
 
 # Files
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
-## Create files and folders
+## 업무내용
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+변호사 회원의 권한 관련 기능, 프로필 페이지
 
-## Switch to another file
+- 무한 스크롤 방식의 변호사 리스트 노출
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+- 변호사 회원용 글쓰기 및 수정 기능
 
-## Rename a file
+- 예약하기 기능과 연동
+
+## 개발환경
+- H/W : Intel호환기중
+
+-  언어 : Java
+
+- O/S : Window
+
+- DB : Oracle
+
+## 담당
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
@@ -142,5 +153,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA2MTQyODIsMTQzNTg0MjI0OV19
+eyJoaXN0b3J5IjpbLTIzMTI5MDY0OCwxNDM1ODQyMjQ5XX0=
 -->
