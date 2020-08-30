@@ -56,11 +56,8 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 ## DB 설계
 
-<![if !vml]>![그림입니다.
 
-원본 그림의 이름: cif00001.png
-
-원본 그림의 크기: 가로 1397pixel, 세로 1175pixel](file:///C:\Users\kh334\AppData\Local\Temp\tmpD647.jpg)<![endif]>
+![image](https://user-images.githubusercontent.com/61821190/91650073-e4fd3100-eab5-11ea-98c5-e7fab6b587a6.png)
 
 
 # Synchronization
@@ -178,6 +175,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ0ODczNDcsMTQxNDI2OTIyNywxND
-M1ODQyMjQ5XX0=
+eyJoaXN0b3J5IjpbMTcwMTMxMDUwOSwxNDE0MjY5MjI3LDE0Mz
+U4NDIyNDldfQ==
 -->
