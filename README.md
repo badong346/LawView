@@ -65,7 +65,7 @@
 - 변호사 회원용 글쓰기 및 수정 기능
 
 - 예약하기 기능과 연동
-- 
+
 # 화면 소개
 
 You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
@@ -135,7 +135,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 개발을 배우기 시작한지 3개월만에 만들기 시작한 첫 팀 프로젝트 이고, 프로젝트 기간이 2주일이 채 되지 않아서 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 나아진 모습으로 진행 할 수 있었습니다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Nzk0MDA1NSw1OTk2MTI1NDEsLTI5MT
-E1NzUzNiwxMTY1MzY5MDk0LDE0MTQyNjkyMjcsMTQzNTg0MjI0
-OV19
+eyJoaXN0b3J5IjpbMTQ0NjM5NTQyMCwtMzQ3OTQwMDU1LDU5OT
+YxMjU0MSwtMjkxMTU3NTM2LDExNjUzNjkwOTQsMTQxNDI2OTIy
+NywxNDM1ODQyMjQ5XX0=
 -->
