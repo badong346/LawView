@@ -135,7 +135,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 # 참여소감
 
-개발을 배우기 시작한지 3개월만에과 관련해서는 처음 했던 팀 프로젝트 이고, 프로젝트 기간에 비해 팀원들이 각자 추가하고자 하는 기능들이 많아 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 효율적으로 진행 할 수 
+개발을 배우기 시작한지 3개월만에 만들기 시작한 첫 팀 프로젝트 이고, 프로젝트 기간이 2주일이 채 되지 않아서 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 나아진 모습으로 징행 할 수 있었습
 
 > Before starting to publish, you must link an account in the **Publish** sub-menu.
 
@@ -215,6 +215,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDEyMzg5MSwtMjkxMTU3NTM2LDExNj
+eyJoaXN0b3J5IjpbLTc4MDQ5ODk1NSwtMjkxMTU3NTM2LDExNj
 UzNjkwOTQsMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
 -->
