@@ -93,11 +93,22 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 ## 프로필 살세 페이지
 
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
+> 상세 프로필 페이지
+![image](https://user-images.githubusercontent.com/61821190/91650336-3f4bc100-eab9-11ea-8823-f3764002d346.png)
 
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
 
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
+
+**구현기능설명**
+
+• 프로필 리스트를 통해 이동하는 상세 페이지
+
+• 반응형 웹으로 동작하여 모바일로 접속하여도 모든 기능이 원활 하도록 구축
+
+• 전문 분야는 프로필 작성 시 체크한 항목들을 출력
+
+• 교육 사항 파트는 썸머노트를 활용하여 추가로 이미지를 넣고 글자 크기 등을 편집 할 수 있도록 구성
+
+• 세션 정보를 확인하여 작성한 변호사 회원일 경우만 프로필 삭제, 프로필 수정, 상담시간 설정 기능을 사용하도록 설정
 
 ## Manage file synchronization
 
@@ -186,6 +197,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQzNjIxNzU0LC0yOTExNTc1MzYsMTE2NT
+eyJoaXN0b3J5IjpbNDE5NjMyNjk1LC0yOTExNTc1MzYsMTE2NT
 M2OTA5NCwxNDE0MjY5MjI3LDE0MzU4NDIyNDldfQ==
 -->
