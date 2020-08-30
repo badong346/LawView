@@ -1,6 +1,6 @@
 # 법률검색 및 변호사 상담사이트
 
-기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령 정보는 일반인에게는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률 검색 기능과 상담 기능**을 제공하는 사이트를 만들고자 함.
+ 기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령 정보는 일반인에게는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률 검색 기능과 상담 기능**을 제공하는 사이트를 만들고자 함.
 
 
 # Files
@@ -18,6 +18,28 @@ StackEdit stores your files in your browser, which means all your files are auto
 - 예약하기 기능과 연동
 
 ## 개발환경
+
+서버
+
+apache-tomcat-8.5.55
+
+Java EE IDE
+
+Eclipse (2019-12)
+
+Database
+
+Oracle SQL Developer
+
+사용언어
+
+Java, HTML, CSS, JavaScript, JSP, SQL
+
+라이브러리
+
+jQuery(3.5.1)
+
+BootStrap(4.5.0)
 - H/W : Intel호환기중
 
 -  언어 : Java
@@ -28,7 +50,9 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 ## 담당
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+- 변호사 회원 관련 전체 기획, 프론트엔드 및 백엔드 기능구현, 데이터베이스 연동 / 1명 (본인) / 100%
+
+- 의뢰인 회원 기능, 국가법령정보 공동활용 OPEN API 활용, 상담 게시판, 예약 기능 / 6명  / 17%
 
 ## Delete a file
 
@@ -110,7 +134,8 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 |                |ASCII                          |HTML                         |
 |----------------|-------------------------------|-----------------------------|
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Quotes    
+   |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
 
@@ -153,5 +178,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTI5MDY0OCwxNDM1ODQyMjQ5XX0=
+eyJoaXN0b3J5IjpbMTYxNTI1Nzg2NiwxNDM1ODQyMjQ5XX0=
 -->
