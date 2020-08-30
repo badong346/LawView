@@ -37,7 +37,7 @@
 
 ## DB 설계
 
-
+>[https://aquerytool.com/](https://aquerytool.com/) 에서 제공하는
 ![image](https://user-images.githubusercontent.com/61821190/91650073-e4fd3100-eab5-11ea-98c5-e7fab6b587a6.png)
 
 
@@ -71,9 +71,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 ## 변호사 프로필 리스트
 >'변호사 회원'이 자신의 프로필을 작성할 경우, 모든 이용자에게 프로필 리스트가 출력 되는 페이지
-
 ![image](https://user-images.githubusercontent.com/61821190/91650143-ec710a00-eab6-11ea-9f8c-6f2faa9ac1c7.png)
-
 ![image](https://user-images.githubusercontent.com/61821190/91650338-41ae1b00-eab9-11ea-9352-1d47ffa34d99.png)
 
 
@@ -95,11 +93,8 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 ## 프로필 살세 페이지
 
 > 상세 프로필 페이지
-
-![image](https://user-images.githubusercontent.com/61821190/91650336-3f4bc100-eab9-11ea-8823-f3764002d346.png)
-
-
-![image](https://user-images.githubusercontent.com/61821190/91650338-41ae1b00-eab9-11ea-9352-1d47ffa34d99.png)
+>![image](https://user-images.githubusercontent.com/61821190/91650336-3f4bc100-eab9-11ea-8823-f3764002d346.png)
+>![image](https://user-images.githubusercontent.com/61821190/91650338-41ae1b00-eab9-11ea-9352-1d47ffa34d99.png)
 
 **구현기능설명**
 
@@ -135,86 +130,9 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 # 참여소감
 
-개발을 배우기 시작한지 3개월만에 만들기 시작한 첫 팀 프로젝트 이고, 프로젝트 기간이 2주일이 채 되지 않아서 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 나아진 모습으로 징행 할 수 있었습
+개발을 배우기 시작한지 3개월만에 만들기 시작한 첫 팀 프로젝트 이고, 프로젝트 기간이 2주일이 채 되지 않아서 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 나아진 모습으로 진행 할 수 있었습니다.
 
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes    
-   |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDQ5ODk1NSwtMjkxMTU3NTM2LDExNj
+eyJoaXN0b3J5IjpbLTg4NDE0NTgzMCwtMjkxMTU3NTM2LDExNj
 UzNjkwOTQsMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
 -->
