@@ -3,13 +3,6 @@
  기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령 정보는 일반인에게는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률 검색 기능과 상담 기능**을 제공하는 사이트를 만들고자 함.
 
 
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
-
-
-
 ## 개발환경
 
 
@@ -175,6 +168,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTk0ODU5OSwxNDE0MjY5MjI3LDE0Mz
-U4NDIyNDldfQ==
+eyJoaXN0b3J5IjpbOTIxNTgyMjU0LDE0MTQyNjkyMjcsMTQzNT
+g0MjI0OV19
 -->
