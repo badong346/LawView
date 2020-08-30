@@ -74,6 +74,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 ![image](https://user-images.githubusercontent.com/61821190/91650143-ec710a00-eab6-11ea-9f8c-6f2faa9ac1c7.png)
 
+![image](https://user-images.githubusercontent.com/61821190/91650338-41ae1b00-eab9-11ea-9352-1d47ffa34d99.png)
 
 
 
@@ -94,9 +95,11 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 ## 프로필 살세 페이지
 
 > 상세 프로필 페이지
+
 ![image](https://user-images.githubusercontent.com/61821190/91650336-3f4bc100-eab9-11ea-8823-f3764002d346.png)
 
 
+![image](https://user-images.githubusercontent.com/61821190/91650338-41ae1b00-eab9-11ea-9352-1d47ffa34d99.png)
 
 **구현기능설명**
 
@@ -110,7 +113,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 • 세션 정보를 확인하여 작성한 변호사 회원일 경우만 프로필 삭제, 프로필 수정, 상담시간 설정 기능을 사용하도록 설정
 
-## Manage file synchronization
+## 프로필 작성 페이지 (반응형)
 
 Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
 
@@ -197,6 +200,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5NjMyNjk1LC0yOTExNTc1MzYsMTE2NT
-M2OTA5NCwxNDE0MjY5MjI3LDE0MzU4NDIyNDldfQ==
+eyJoaXN0b3J5IjpbLTEzMDU1NjY3MzMsLTI5MTE1NzUzNiwxMT
+Y1MzY5MDk0LDE0MTQyNjkyMjcsMTQzNTg0MjI0OV19
 -->
