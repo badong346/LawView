@@ -1,6 +1,6 @@
 # 법률검색 및 변호사 상담사이트
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+기존의 법률 상담 사이트에는 법률 자체를 검색하는 기능이 없으며, 국가 법령정보센터에서 제공하는 법령정보는 복잡하고 양이 많음, 따라서 **쉽고 간편한 법률검색 기능과 상담 기능을 제공하는 사이트를 만들고자 함.
 
 
 # Files
@@ -142,5 +142,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTg0MjI0OV19
+eyJoaXN0b3J5IjpbLTEyMTA2MTQyODIsMTQzNTg0MjI0OV19
 -->
