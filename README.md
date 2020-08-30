@@ -70,10 +70,35 @@
 You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
 
 ## 변호사 프로필 리스트
+>'변호사 회원'이 자신의 프로필을 작성할 경우, 모든 이용자에게 프로필 리스트가 출력 되는 페이지
 
 ![image](https://user-images.githubusercontent.com/61821190/91650143-ec710a00-eab6-11ea-9f8c-6f2faa9ac1c7.png)
 
-'변호사 회원'이 자신의 프로필을 작성할 경우, 모든 이용자에게 프로필 리스트가 출력 되는 페이지
+
+
+
+
+**구현기능설명**
+
+<![if !supportEmptyParas]> <![endif]>
+
+• 비회원도 열람 가능한 변호사 프로필 리스트로, 변호사 회원정보와 프로필 작성 시 추가로 작성한 사항들이 노출된다.
+
+<![if !supportEmptyParas]> <![endif]>
+
+• 변호사 이름과 이미지에 마우스를 올리면 색이 변하며 클릭시 상세 페이지로 연결
+
+<![if !supportEmptyParas]> <![endif]>
+
+• AJAX를 활용한 비동기 방식으로 최신 프로필 10개만 불러오고, 스크롤을 내리면 연속적으로 불러오도록 구축
+
+<![if !supportEmptyParas]> <![endif]>
+
+• 프로필 이미지가 없을 시 기본 아이콘이 나타나도록 설정
+
+<![if !supportEmptyParas]> <![endif]>
+
+• 세션에 저장된 회원정보가 변호사 일 경우 프로필 작성 버튼이 상단에 나타난다.
 
 ## Synchronize a file
 
@@ -170,6 +195,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTE1NzUzNiwxMTY1MzY5MDk0LDE0MT
-QyNjkyMjcsMTQzNTg0MjI0OV19
+eyJoaXN0b3J5IjpbLTc5MzY0ODkwMiwtMjkxMTU3NTM2LDExNj
+UzNjkwOTQsMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
 -->
