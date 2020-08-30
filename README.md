@@ -71,6 +71,8 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 ## 변호사 프로필 리스트
 
+![image](https://user-images.githubusercontent.com/61821190/91650143-ec710a00-eab6-11ea-9f8c-6f2faa9ac1c7.png)
+
 You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
 
 ## Synchronize a file
@@ -168,6 +170,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDM3NDA2MiwxNDE0MjY5MjI3LDE0Mz
+eyJoaXN0b3J5IjpbMTE2NTM2OTA5NCwxNDE0MjY5MjI3LDE0Mz
 U4NDIyNDldfQ==
 -->
