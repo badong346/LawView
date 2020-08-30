@@ -35,13 +35,32 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 - 의뢰인 회원 기능, 국가법령정보 공동활용 OPEN API 활용, 상담 게시판, 예약 기능 / 6명  / 17%
 
-## Delete a file
+## 구현 기능
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+• 검색 기능 : 메인 화면에 노출 (‘국가법령정보 공동활용 OPEN API’ 활용)
 
-## Export a file
+• 상세 검색 페이지 : 법률 카테고리 별 검색
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+• 상담 페이지
+
+• 변호사 프로필 페이지 & 예약하기 페이지
+
+• 회원서비스 : 가입(의뢰인,변호사 구분) / 정보수정 / 탈퇴 / 의뢰글 작성(의뢰인) / 의뢰글 답변(변호사) / 프로필 작성(변호사) / 예약 시간 설정(변호사) / 예약하기(의뢰인)
+
+• SQL 문을 활용하여 DB 연결
+
+• Session을 이용하여 회원 분류별 권한 조정
+
+• jQuery를 활용한 반응형 웹 구현
+
+
+## DB 설계
+
+You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.<![if !vml]>![그림입니다.
+
+원본 그림의 이름: cif00001.png
+
+원본 그림의 크기: 가로 1397pixel, 세로 1175pixel](file:///C:\Users\kh334\AppData\Local\Temp\tmpD647.jpg)<![endif]>
 
 
 # Synchronization
@@ -159,6 +178,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDQxMzk3OSwxNDE0MjY5MjI3LDE0Mz
-U4NDIyNDldfQ==
+eyJoaXN0b3J5IjpbLTE1OTkxOTE0MzUsMTQxNDI2OTIyNywxND
+M1ODQyMjQ5XX0=
 -->
