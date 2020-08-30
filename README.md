@@ -80,27 +80,18 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 
 **구현기능설명**
 
-<![if !supportEmptyParas]> <![endif]>
 
-• 비회원도 열람 가능한 변호사 프로필 리스트로, 변호사 회원정보와 프로필 작성 시 추가로 작성한 사항들이 노출된다.
+• 비회원도 열람 가능한 변호사 프로필 리스트로, '변호사 회원정보'와 '프로필 작성 시 추가로 작성한 사항'들이 노출된다.
 
-<![if !supportEmptyParas]> <![endif]>
+• 변호사 이름과 이미지에 마우스를 올리면 색이 변하며, 클릭시 상세 프로필 페이지로 연결
 
-• 변호사 이름과 이미지에 마우스를 올리면 색이 변하며 클릭시 상세 페이지로 연결
-
-<![if !supportEmptyParas]> <![endif]>
-
-• AJAX를 활용한 비동기 방식으로 최신 프로필 10개만 불러오고, 스크롤을 내리면 연속적으로 불러오도록 구축
-
-<![if !supportEmptyParas]> <![endif]>
+• AJAX를 활용한 비동기 방식으로 최신 프로필 10개만 불러오고, 스크롤을 내리면 연속적으로 10개씩 다음 프로필을 불러오도록 구축
 
 • 프로필 이미지가 없을 시 기본 아이콘이 나타나도록 설정
 
-<![if !supportEmptyParas]> <![endif]>
+• 세션에 저장된 회원정보가 변호사 일 경우, 프로필 작성 버튼이 상단에 노출
 
-• 세션에 저장된 회원정보가 변호사 일 경우 프로필 작성 버튼이 상단에 나타난다.
-
-## Synchronize a file
+## 프로필 살세 페이지
 
 Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
 
@@ -195,6 +186,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzY0ODkwMiwtMjkxMTU3NTM2LDExNj
-UzNjkwOTQsMTQxNDI2OTIyNywxNDM1ODQyMjQ5XX0=
+eyJoaXN0b3J5IjpbOTQzNjIxNzU0LC0yOTExNTc1MzYsMTE2NT
+M2OTA5NCwxNDE0MjY5MjI3LDE0MzU4NDIyNDldfQ==
 -->
