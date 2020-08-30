@@ -7,15 +7,8 @@
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
-## 업무내용
 
-변호사 회원의 권한 관련 기능, 프로필 페이지
 
-- 무한 스크롤 방식의 변호사 리스트 노출
-
-- 변호사 회원용 글쓰기 및 수정 기능
-
-- 예약하기 기능과 연동
 
 ## 개발환경
 
@@ -29,11 +22,6 @@ StackEdit stores your files in your browser, which means all your files are auto
 -  라이브러리 : jQuery(3.5.1), BootStrap(4.5.0)
  
 
-## 담당
-
-- 변호사 회원 관련 전체 기획, 프론트엔드 및 백엔드 기능구현, 데이터베이스 연동 / 1명 (본인) / 100%
-
-- 의뢰인 회원 기능, 국가법령정보 공동활용 OPEN API 활용, 상담 게시판, 예약 기능 / 6명  / 17%
 
 ## 구현 기능
 
@@ -60,18 +48,30 @@ StackEdit stores your files in your browser, which means all your files are auto
 ![image](https://user-images.githubusercontent.com/61821190/91650073-e4fd3100-eab5-11ea-98c5-e7fab6b587a6.png)
 
 
-# Synchronization
+# 담당 역할
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
 
-There are two types of synchronization and they can complement each other:
+• 기능 기획, DB 설계, 변호사 회원 관련 기능 구현, 프로필 게시판 관련 기능 구현
 
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
+• 프로젝트 주제 선정, 기능 기획 및 조원들과 전체 테이블 설계
 
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
 
+## 참여도/기여도
+
+- 변호사 회원 관련 전체 기획, 프론트엔드 및 백엔드 기능구현, 데이터베이스 연동 / 1명 (본인) / 100%
+
+- 의뢰인 회원 기능, 국가법령정보 공동활용 OPEN API 활용, 상담 게시판, 예약 기능 / 6명  / 17%
+
+## 업무내용
+
+변호사 회원의 권한 관련 기능, 프로필 페이지
+
+- 무한 스크롤 방식의 변호사 리스트 노출
+
+- 변호사 회원용 글쓰기 및 수정 기능
+
+- 예약하기 기능과 연동
+- 
 ## Open a file
 
 You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
@@ -175,6 +175,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTMxMDUwOSwxNDE0MjY5MjI3LDE0Mz
+eyJoaXN0b3J5IjpbMTQyOTk0ODU5OSwxNDE0MjY5MjI3LDE0Mz
 U4NDIyNDldfQ==
 -->
