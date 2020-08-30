@@ -21,18 +21,14 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 
 -  H/W : Intel호환기중
-
--  언어 : Java
-
+-  언어 : Java, HTML, CSS, JavaScript, JSP, Oracle SQL
 -  O/S : Window
-
 -  DB : Oracle
-
 -  서버 : apache-tomcat-8.5.55
--  DB : Oracle
--  DB : Oracle
--  DB : Oracle
-- 
+-  IDE : Eclipse (2019-12)
+-  라이브러리 : jQuery(3.5.1), BootStrap(4.5.0)
+ 
+
 ## 담당
 
 - 변호사 회원 관련 전체 기획, 프론트엔드 및 백엔드 기능구현, 데이터베이스 연동 / 1명 (본인) / 100%
@@ -163,6 +159,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODIwNjY1MSwxNDE0MjY5MjI3LDE0Mz
+eyJoaXN0b3J5IjpbLTY2MDQxMzk3OSwxNDE0MjY5MjI3LDE0Mz
 U4NDIyNDldfQ==
 -->
