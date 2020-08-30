@@ -38,6 +38,7 @@
 ## DB 설계
 
 >[AQueryTool](https://aquerytool.com/) 에서 제공하는 기능으로 데이터베이스를 설게하였습니다.
+>
 ![image](https://user-images.githubusercontent.com/61821190/91650073-e4fd3100-eab5-11ea-98c5-e7fab6b587a6.png)
 
 
@@ -134,6 +135,7 @@ You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening 
 개발을 배우기 시작한지 3개월만에 만들기 시작한 첫 팀 프로젝트 이고, 프로젝트 기간이 2주일이 채 되지 않아서 기한을 넘기지 않을까 걱정 했지만, 다행이 기한 내에  만들 수 있었습니다. 시행착오도 있었고 지나고 돌아보니 미숙한 부분들이 많이 보이지만, 그 시행착오를 통해 더 많이 배울 수 있었고 다음 프로젝트는 더 나아진 모습으로 진행 할 수 있었습니다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5NjEyNTQxLC0yOTExNTc1MzYsMTE2NT
-M2OTA5NCwxNDE0MjY5MjI3LDE0MzU4NDIyNDldfQ==
+eyJoaXN0b3J5IjpbLTM0Nzk0MDA1NSw1OTk2MTI1NDEsLTI5MT
+E1NzUzNiwxMTY1MzY5MDk0LDE0MTQyNjkyMjcsMTQzNTg0MjI0
+OV19
 -->
